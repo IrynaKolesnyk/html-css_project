@@ -354,7 +354,7 @@
   position: absolute;
   top: -100px;
   left: 50%;
-  width: 220px;
+  width: 450px;
   transform: translate(-50%, -50%);
 
   padding: 0 15px;
@@ -362,6 +362,14 @@
   visibility: hidden;
   transition: opacity 400ms linear, visibility 400ms linear;
   color: $main-color;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 232px;
+  }
 
   .products_button:hover &,
   .products_button:focus & {
@@ -372,4 +380,12 @@
 
 .description-products_chocolate-cocktail {
   background-color: #c2e297;
+}
+
+.description-products_milkshake {
+  background-color: #f0d1a5;
+}
+
+.description-products_icecreame {
+  background-color: #ffb8ca;
 }
