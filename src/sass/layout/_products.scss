@@ -30,7 +30,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    margin: -12px;
+    margin: -14px;
   }
 }
 
@@ -53,9 +53,9 @@
   }
 
   @media screen and (min-width: 1280px) {
-    margin: 12px;
-    padding: 170px 45px 50px 44px;
-    flex-basis: calc((100% - 78px) / 3);
+    margin: 14px;
+    padding: 170px 44px 50px 44px;
+    flex-basis: calc((100% - 86px) / 3);
   }
 }
 
@@ -123,6 +123,7 @@
       background-image: url(../images/products/icecreame-desktop-1x-min.png);
       top: -40%;
       left: 0;
+      width: 100%;
       height: 335px;
 
       @media screen and (min-device-pixel-ratio: 2),
@@ -289,13 +290,14 @@
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    letter-spacing: 0.04em;
   }
 }
 
 .products-list_text {
   display: block;
   margin-bottom: 62px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -354,7 +356,7 @@
   position: absolute;
   top: -100px;
   left: 50%;
-  width: 450px;
+  width: 280px;
   transform: translate(-50%, -50%);
 
   padding: 0 15px;
@@ -363,12 +365,17 @@
   transition: opacity 400ms linear, visibility 400ms linear;
   color: $main-color;
 
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 220px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 232px;
+    width: 332px;
+    font-size: 18px;
   }
 
   .products_button:hover &,
