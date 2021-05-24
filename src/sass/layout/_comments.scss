@@ -1,14 +1,14 @@
 .comments {
   padding-top: 80px;
-  padding-bottom: 86px;
+  padding-bottom: 128px;
 
   @media screen and (min-width: 768px) {
     padding-top: 121px;
-    padding-bottom: 119px;
+    padding-bottom: 166px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 123px;
-    padding-bottom: 132px;
+    padding-bottom: 179px;
   }
   &__icon {
     display: block;
@@ -133,14 +133,6 @@
   }
 }
 .location {
-  margin-bottom: 128px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 166px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 179px;
-  }
-
   &__text {
     font-size: 14px;
     line-height: 1.86;
@@ -154,23 +146,39 @@
   }
 }
 .slick-dots {
-  bottom: 80px;
+  bottom: -30px;
   @media screen and (min-width: 768px) {
-    bottom: 120px;
-  }
-  @media screen and (min-width: 1280px) {
-    bottom: 140px;
+    bottom: -35px;
   }
 }
+
 .slick-dots li button:before {
-  font-size: 12px;
+  content: '';
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+  border-radius: 50%;
+  background-position: center;
 }
+
 .slick-dots li.slick-active button:before {
-  content: url('../images/comments/house.svg');
-  //   content: '';
-  //   background-image: url('../images/comments/house.svg');
-  //   background-repeat: no-repeat;
+  content: '';
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-image: url('../images/comments/house.svg');
+  background-repeat: no-repeat;
   font-size: 12px;
+  background-size: cover;
+  border-radius: 0;
+  background-color: transparent;
+  background-position: center;
 }
 .slick-dotted.slick-slider {
   margin: 0;
