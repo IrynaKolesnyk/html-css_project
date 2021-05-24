@@ -1,4 +1,7 @@
 
+  .cover {
+      margin-bottom: 121px;
+  }
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -31,6 +34,11 @@
     align-items: center;
     color: #D41443;
     margin-bottom: 19px;
+    &:hover,
+    &:focus {
+        background: #ECEBEB;
+        transform: scale(1.1);
+    }
   }
   
   .cover {
@@ -201,6 +209,7 @@ transition: 250ms;
   .base__button-two:hover,
   .base__button-two:focus {
     background: #ECEBEB;
+    transform: scale(1.1);
   }
   
   .size {
@@ -322,9 +331,8 @@ cursor: pointer;
     
 &:hover,
 &:focus {
-    background-color: $main-color;
-    color: $title-color;
-    transform: scale(1.2);
+    background-color: #C7133E;
+transform: scale(1.1);
   }
   }
   
@@ -526,7 +534,9 @@ cursor: pointer;
       top: 123px;
       border-bottom: 1px solid #E18298;
     }
-  
+    .cover {
+        margin-bottom: 122px;
+    }
     .is-hidden {
       visibility: hidden;
       opacity: 0;
@@ -609,6 +619,7 @@ cursor: pointer;
     .base__button-two:hover,
   .base__button-two:focus {
       background: #ECEBEB;
+      transform: scale(1.1);
     }
   
     .size {
@@ -675,7 +686,9 @@ cursor: pointer;
   
     .header-btn:hover,
   .header-btn:focus {
+
       background: #ECEBEB;
+      transform: scale(1.1);
     }
   
     .navigation__class {
@@ -748,8 +761,8 @@ cursor: pointer;
       
 &:hover,
 &:focus {
-      background-color: #ffffff;
-      color: #d41443;
+    background-color: #C7133E;
+transform: scale(1.1);
     }
     }
   
@@ -843,9 +856,8 @@ cursor: pointer;
     }
   
     .elips {
-      position: fixed;
-      left: 40%;
-      top: 3%;
+        left: 37%;
+        top: -6%;
       right: 10%;
       bottom: 10%;
       width: 324px;
@@ -858,7 +870,7 @@ cursor: pointer;
       right: 31%;
       transition: 500ms;
       top: -4.8%;
-      left: 51%;
+      left: 47%;
       bottom: 0px;
       width: 143px;
       height: 336px;
@@ -904,6 +916,7 @@ cursor: pointer;
     .base__button-two:hover,
   .base__button-two:focus {
       background: #ECEBEB;
+      transform: scale(1.1);
     }
   
     .header-btn {
@@ -1021,8 +1034,8 @@ cursor: pointer;
       
 &:hover,
 &:focus {
-      background-color: #ffffff;
-      color: #d41443;
+    background-color: #C7133E;
+transform: scale(1.1);
     }
     }
   
@@ -1196,6 +1209,8 @@ transition: 500ms;
         width: 236px;
 height: 557px;
     }
-
+    .cover {
+        margin-bottom: 126px;
+    }
   }
   
