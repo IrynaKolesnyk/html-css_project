@@ -1,0 +1,18 @@
+.suptitle {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  color: $suptitle-color;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}

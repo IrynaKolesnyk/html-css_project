@@ -1,0 +1,100 @@
+.advantages {
+  padding-top: 38px;
+  padding-bottom: 96px;
+  background-color: $section-bg-color;
+}
+.advantages__text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 16px;
+
+  max-width: 230px;
+}
+.advantages__title {
+  padding-top: 104px;
+}
+.advantages__item {
+  position: relative;
+}
+.advantages__img-milk::before {
+  position: absolute;
+  content: '';
+  top: 10%;
+  left: 0%;
+  width: 33px;
+  height: 50px;
+
+  background-image: url(../images/advantages/adv.milk.png);
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    top: -10%;
+  }
+}
+.advantages__img-apple::before {
+  position: absolute;
+  content: '';
+  top: 10%;
+  left: 0%;
+  width: 50px;
+  height: 50px;
+
+  background-image: url(../images/advantages/adv.apples.png);
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    top: -10%;
+  }
+}
+.advantages__img-heart::before {
+  position: absolute;
+  content: '';
+  top: 10%;
+  left: 0;
+  width: 44px;
+  height: 50px;
+
+  background-image: url(../images/advantages/adv.heart.png);
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    top: -10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+  .advantages__item {
+    margin-top: 30px;
+    margin-right: 60px;
+    flex-basis: calc((100% - 180px) / 3);
+  }
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.74;
+    margin-top: 13px;
+
+    max-width: 200px;
+  }
+  .advantages__title {
+    padding-top: 66px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-top: 39px;
+    padding-bottom: 139px;
+  }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    margin-top: 16px;
+    max-width: 340px;
+  }
+}
