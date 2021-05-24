@@ -1,11 +1,7 @@
 .gallery {
   background-image: linear-gradient(#fff5f6 0% 40%, white 40% 100%);
-  margin-bottom: 80px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 121px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 123px;
+  &__container {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
