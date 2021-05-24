@@ -1,44 +1,104 @@
-const accentButton = document.getElementById('accent-button')
+const accentButton = document.getElementById('accent-button');
+const dropdownMenu = document.getElementById('myDropdown');
+accentButton.onclick = function () {
+  dropdownMenu.classList.toggle('show');
+};
 
-accentButton.onclick = function() {
-  document.getElementById("myDropdown").classList.toggle("show")
-}
+const myModal = document.getElementById('myModal');
+const myButtun = document.getElementById('cityMaps');
+const closeChicago = document.getElementById('closeChicago');
+myButtun.onclick = function () {
+  myModal.style.display = 'block';
+};
 
-const myModal = document.getElementById('myModal')
-const myButtun = document.getElementById('cityMaps')
-const closeIcon = document.getElementById('idClose')
+closeChicago.onclick = function (event) {
+  event.stopPropagation();
+  myModal.style.display = 'none';
+  dropdownMenu.classList.toggle('show');
+};
 
-myButtun.onclick = function() {
-  myModal.style.display = 'block'
-}
+const myModall = document.getElementById('myModall');
+const myButtunn = document.getElementById('cityMapss');
+const closeLosAngeles = document.getElementById('closeLosAngeles');
+myButtunn.onclick = function () {
+  myModall.style.display = 'block';
+};
 
-closeIcon.onclick = function() {
-  alert('vfdsff')
-  myModal.style.display = 'none'
-}
+closeLosAngeles.onclick = function (event) {
+  event.stopPropagation();
+  myModal.style.display = 'none';
+  dropdownMenu.classList.toggle('show');
+};
 
-const myModall = document.getElementById('myModall')
-const myButtunn = document.getElementById('cityMapss')
+const myModalll = document.getElementById('myModalll');
+const myButtunnn = document.getElementById('cityMapsss');
+const closeNewYork = document.getElementById('closeNewYork');
+myButtunnn.onclick = function () {
+  myModalll.style.display = 'block';
+};
 
-myButtunn.onclick = function() {
-  myModall.style.display = 'block'
-}
+closeNewYork.onclick = function (event) {
+  event.stopPropagation();
+  myModal.style.display = 'none';
+  dropdownMenu.classList.toggle('show');
+};
 
-const myModalll = document.getElementById('myModalll')
-const myButtunnn = document.getElementById('cityMapsss')
-
-myButtunnn.onclick = function() {
-  myModalll.style.display = 'block'
-}
-
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == myModal) {
-    myModal.style.display = "none";
-  } 
-    if (event.target == myModall) {
-    myModall.style.display = "none";
-  } 
-    if (event.target == myModalll) {
-    myModalll.style.display = "none";
+    myModal.style.display = 'none';
+    dropdownMenu.classList.toggle('show');
   }
-}
+  if (event.target == myModall) {
+    myModall.style.display = 'none';
+    dropdownMenu.classList.toggle('show');
+  }
+  if (event.target == myModalll) {
+    myModalll.style.display = 'none';
+    dropdownMenu.classList.toggle('show');
+  }
+};
+
+// const accentButton = document.getElementById('accent-button')
+
+// accentButton.onclick = function() {
+//   document.getElementById("myDropdown").classList.toggle("show")
+// }
+
+// const myModal = document.getElementById('myModal')
+// const myButtun = document.getElementById('cityMaps')
+// const closeIcon = document.getElementById('idClose')
+
+// myButtun.onclick = function() {
+//   myModal.style.display = 'block'
+// }
+
+// closeIcon.onclick = function() {
+//   alert('vfdsff')
+//   myModal.style.display = 'none'
+// }
+
+// const myModall = document.getElementById('myModall')
+// const myButtunn = document.getElementById('cityMapss')
+
+// myButtunn.onclick = function() {
+//   myModall.style.display = 'block'
+// }
+
+// const myModalll = document.getElementById('myModalll')
+// const myButtunnn = document.getElementById('cityMapsss')
+
+// myButtunnn.onclick = function() {
+//   myModalll.style.display = 'block'
+// }
+
+// window.onclick = function(event) {
+//   if (event.target == myModal) {
+//     myModal.style.display = "none";
+//   } 
+//     if (event.target == myModall) {
+//     myModall.style.display = "none";
+//   } 
+//     if (event.target == myModalll) {
+//     myModalll.style.display = "none";
+//   }
+// }
