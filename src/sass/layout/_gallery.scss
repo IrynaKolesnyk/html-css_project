@@ -1,3 +1,7 @@
 .gallery {
-  background-image: linear-gradient(rgba(255, 245, 246, 1), rgba(255, 255, 255, 1));
+  background-image: linear-gradient(#fff5f6 0% 40%, white 40% 100%);
+  &__container {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
